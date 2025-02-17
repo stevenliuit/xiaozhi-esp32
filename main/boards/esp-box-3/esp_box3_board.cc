@@ -50,8 +50,8 @@ private:
         // Initialize I2C peripheral
         i2c_master_bus_config_t i2c_bus_cfg = {
             .i2c_port = (i2c_port_t)1,
-            .sda_io_num = AUDIO_CODEC_I2C_SDA_PIN,
-            .scl_io_num = AUDIO_CODEC_I2C_SCL_PIN,
+            .sda_io_num = 4,
+            .scl_io_num = 8,
             .clk_source = I2C_CLK_SRC_DEFAULT,
             .glitch_ignore_cnt = 7,
             .intr_priority = 0,
